@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="silver">
+    <center>
+        <font size="+4" face="comic sans ms" color="darkblue">
+            О решении задачи №3
+        </font><br><br>
+        <hr size=2 color="darkblue" >
+        <font size="+2" face="comic sans ms" color="darkblue">
+            Построение внешней характеристики источника - зависимости выходного напряжения от нагрузки
+        </font><br><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Для построения внешней характеристики, в первую очередь нам нужно построить схему источника питания электроборов постоянного напряжения. 
+        </font><br><br>
+
+        <img src = "../Screen/Выпрямитель.png"><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 1. Источник питания постоянного напряжения.
+        </font><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Установим для источника первичного напряжения частоту 50 гц и амплитуду 220 в.
+        </font><br><br>
+
+        <img src = "../Screen/Настройки сети для выпрямителя.png"><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 2. Настройки сети для выпрямителя - 50гц, 220в.
+        </font><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Таким образом, мы построили два сглаживающих фильтра с различными Rн. Включили в схемы по 2 вольтметра, для измерения Uвх и U вых.<br><br>
+            На каждой схеме мы на источнике ЭДС поставили синусоидальное напряжение с частотой f, которую в дальшейшнем будем изменять.<br>
+        </font><br><br>
+
+        <img src="../Screen/Характеристика ЭДС.png" ><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 3. Характеристика ЭДС.
+        </font><br><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Изменяя частоту, снимаем показания с вольтметров и получаем следующие данные:<br>
+        </font><br><br>
+
+        <img src="../Screen/АЧХ сглаж. фильтра при Rн inf.png" ><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 4. АЧХ сглаживающего фильтра при Rн = inf.
+        </font><br><br><br>
+
+        <img src="../Screen/АЧХ сглаж. фильтра при Rн 10.png" ><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 5. АЧХ сглаживающего фильтра при Rн = 10.
+        </font><br><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Таким образом, исходя из этих данных, мы можем построить графики зависимости коэффициентов 
+            передачи сглаживающих фильтров от частоты входного напряжения - K(f).
+        </font><br><br><br>
+
+        <img src="../Screen/График сгф inf.jpg" ><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 6. График зависимости K(f) для сглаживающего фильтра при Rн = inf.
+        </font><br><br><br>
+
+        <img src="../Screen/График сгф 10.jpg" ><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 7. График зависимости K(f) для сглаживающего фильтра при Rн = 10.
+        </font><br><br><br>
+
+        <font size="+1" face="comic sans ms" color="darkblue">
+            Для проверки полученных графиков, построим график в TINA:
+        </font><br><br><br>
+
+        <img src = "../Screen/Анализатор сгф.png" width = "70%" height="70%"><br><br>
+
+        <img src = "../Screen/График в анализаторе сгф Rн inf.png"><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 8. График зависимости K(f) для сглаживающего фильтра при Rн = inf.
+        </font><br><br><br>
+
+        <img src = "../Screen/График в анализаторе сгф Rн 10.png"><br>
+        <font size="" face="comic sans ms" color="darkblue">
+            Рисунок 9. График зависимости K(f) для сглаживающего фильтра при Rн = 10.
+        </font><br><br><br>
+    </center>
+    
+    
+
+</body>
+</html>
