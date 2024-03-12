@@ -27,7 +27,7 @@ function currentSlide2(n) {
 function showSlides1(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides1");
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("dot1");
   if (n > slides.length) {slideshow1.currentSlideIndex = 1}
   if (n < 1) {slideshow1.currentSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -43,7 +43,7 @@ function showSlides1(n) {
 function showSlides2(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides2");
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("dot2");
   if (n > slides.length) {slideshow2.currentSlideIndex = 1}
   if (n < 1) {slideshow2.currentSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
