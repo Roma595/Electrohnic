@@ -10,12 +10,12 @@
 }
 
 /* Hide the images by default */
-.mySlides {
+.mySlides1, .mySlides2 {
   display: none;
   transition: transform 0.5s ease-in-out;
 }
 
-.mySlides img{
+.mySlides1 img, .mySlides2 img{
   width: 70%;
   height: 70%;
   object-fit: cover;
