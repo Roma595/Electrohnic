@@ -4,7 +4,7 @@
 .slideshow-container {
   position: relative;
   width: 600px;
-  height: 400px;
+  height: 500px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -16,8 +16,8 @@
 }
 
 .mySlides1 img, .mySlides2 img{
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 65%;
   object-fit: cover;
 }
 
